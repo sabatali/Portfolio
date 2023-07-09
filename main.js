@@ -1,18 +1,13 @@
-$('.dropdown').click(function(e){
-  e.stopPropagation();
-  $('.nav-dropdown').toggle();
+let hamMenuIcon = document.getElementById("ham-menu");
+let navBar = document.getElementById("nav-bar");
+let navLinks = navBar.querySelectorAll("li");
+hamMenuIcon.addEventListener("click", () => {
+  navBar.classList.toggle("active");
+  hamMenuIcon.classList.toggle("fa-times");
 });
-
-$('html').click(function(){
-  $('.nav-dropdown').hide();
-})
-
-$('#nav-toggle').on('click', function() {
-  this.classList.toggle('active');
+navLinks.forEach((navLinks) => {
+  navLinks.addEventListener("click", () => {
+    navBar.classList.remove("active");
+    hamMenuIcon.classList.toggle("fa-times");
+  });
 });
-
-$("#nav-toggle").click(function() {
-      $("nav ul").toggle();
-    });
-    
-    
