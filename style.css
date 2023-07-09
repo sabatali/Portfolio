@@ -83,9 +83,34 @@ img {
 
 /* ============================== Nav___Bar ========================================== */
 
+
+
+ .batch_btn {
+    background: linear-gradient(var(--color-primary-variant), var(--color-primary));
+    color: var(--color-bg-1);
+    font-size: 1rem;
+    font-weight: 700;
+    width: 10rem;
+    height: 3rem;
+    border-radius: 3px;
+    display: grid;
+    place-items: center;
+}
+
+.batch_btn:hover {
+    box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.3);
+    transform: translateY(-0.2rem);
+    color: var(--color-bg-1);
+}
+
+
+  .nav_container{
+    display: flex;
+  }
+
  .navbar {
     font-size: 18px;
-    background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
+    background-color: var(--color-bg-4);
     border: 1px solid rgba(0, 0, 0, 0.2);
     padding-bottom: 10px;
   }
@@ -93,6 +118,7 @@ img {
   .main-nav {
     list-style-type: none;
     display: none;
+    margin: 0 auto;
   }
   
   .nav-links,
@@ -140,6 +166,7 @@ img {
       margin-right: 30px;
       flex-direction: row;
       justify-content: flex-end;
+      align-items: center;
     }
   
     .main-nav li {
@@ -745,8 +772,45 @@ input[type=submit]:hover {
     .batch_btn {
         display: none;
     }
+/* 
+    .nav_link {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        flex-direction: column;
+        gap: 0;
+        display: none;
+        z-index: 1;
+    }
 
-    
+    .nav_link li {
+        height: 5rem;
+        box-shadow: 3rem 3rem 3rem rgba(0, 0, 0, 0.7);
+    }
+
+    .nav_link li a {
+        background: var(--color-bg-4);
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 0.8rem 5rem 0.8rem 3rem;
+        border-top: 1px solid var(--color-bg-2);
+    }
+
+    .nav_toggle_btn {
+        display: inline-block;
+        font-size: 2rem;
+        background: transparent;
+        cursor: pointer;
+        color: var(--color-white);
+    }
+
+    #nav_toggle_close {
+        display: none;
+
+    } */
+
 
     header {
         height: fit-content;
