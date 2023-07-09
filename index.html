@@ -17,21 +17,31 @@
 
 <body>
     <!--============================== Nav___Bar ==========================================-->
-    <nav>
-        <div class="container nav_container">
-            <a href="index.html" class="nav_logo"><h4><span>Sabat</span>Ali</h4></a>
-            <ul class="nav_link">
-                <li><a href="#">Home</a></li>
-                <li><a href="#About">About</a></li>
-                <li><a href="#Review">Review</a></li>
-                <li><a href="#Works">Work</a></li>
-                <li><a href="#">Contect</a></li>
-            </ul>
-            <a href="batch.html" class="batch_btn">Contect Us</a>
-            <button class="nav_toggle_btn" id="nav_toggle_open"><i class="fa-solid fa-bars"></i></button>
-            <button class="nav_toggle_btn" id="nav_toggle_close"><i class="fa-solid fa-xmark"></i></button>
-        </div>
-    </nav>
+    <nav class="navbar">
+  <div class="logo"><img src="https://upload.wikimedia.org/wikipedia/commons/2/23/AS_sample_logo.png" alt="LOGO"></div>
+  <div class="push-left">
+    <button id="menu-toggler" data-class="menu-active" class="hamburger">
+      <span class="hamburger-line hamburger-line-top"></span>
+      <span class="hamburger-line hamburger-line-middle"></span>
+      <span class="hamburger-line hamburger-line-bottom"></span>
+    </button>
+
+    <!--  Menu compatible with wp_nav_menu  -->
+    <ul id="primary-menu" class="menu nav-menu">
+      <li class="menu-item current-menu-item"><a class="nav__link"  href="#">Home</a></li>
+      <li class="menu-item dropdown"><a class="nav__link"  href="#">About</a>
+      </li>
+      <li class="menu-item dropdown"><a class="nav__link"  href="#">Contact</a>
+      </li>
+      <li class="menu-item "><a class="nav__link"  href="#">Blog</a>
+       
+      </li>
+    </ul>
+
+
+  </div>
+</nav>
+
 
     <!--============================== Header___Sec ==========================================-->
     <header>
