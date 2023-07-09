@@ -17,30 +17,15 @@ style="transform: rotate(${index * 15}deg)">${character}</span>`).join('')
 })
 
 
+$(document).ready(function() {
+  // Toggle menu on click
+  $("#menu-toggler").click(function() {
+    toggleBodyClass("menu-active");
+  });
 
-const nav = document.querySelector('.nav_link');
-const openNavBtn = document.querySelector('#nav_toggle_open');
-const closeNavBtn = document.querySelector('#nav_toggle_close');
+  function toggleBodyClass(className) {
+    document.body.classList.toggle(className);
+  }
 
-const openNav = () => {
-     nav.style.display = 'flex';
-     openNavBtn.style.display = 'none';
-     closeNavBtn.style.display = 'inline-block';
-}
-
-openNavBtn.addEventListener('click', openNav);
-
-const closeNav = () => {
-    nav.style.display = 'none';
-    openNavBtn.style.display = 'inline-block';
-    closeNavBtn.style.display = 'none';
-}
-
- closeNavBtn.addEventListener('click', closeNav);
-
-
- nav.querySelectorAll('li a').forEach(navlink => {
-    navlink.addEventListener('click' , closeNav);
- })
-
+ });
 
