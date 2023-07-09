@@ -17,34 +17,29 @@
 
 <body>
     <!--============================== Nav___Bar ==========================================-->
-   <div class="top-bar">
-    <button class="top-bar__nav-toggle hamburger" id="top-nav-toggle">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-    <a href="#" class="top-bar__brand">Avire</a>
-    <div class="top-bar__contact">
-      <a href="#">
-        <i class="fa fa-phone" aria-hidden="true"></i> +123.456.7890
-      </a>
-      <a href="#">
-        <i class="fa fa-envelope" aria-hidden="true"></i> info@avire.com
-      </a>
+   
+  <section class="navigation">
+    <div class="nav-container">
+      <div class="brand"><a href="#">Logo<a/></div>
+      <nav>
+        <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+        <ul class="nav-list">
+          <li><a href="#!">Home</a></li>
+          <li><a href="#!">About</a></li>
+          <li class = "dropdown"><a href="#!">Services</a>
+              <ul class="nav-dropdown">
+                <li><a href="#">Web Design</a></li>
+                <li><a href="#">Web Development</a></li>
+                <li><a href="#">Graphic Design</a></li>
+              </ul>
+            </li>
+            <li><a href="#!">Pricing</a></li>
+            <li><a href="#!">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-    <div class="top-bar__social">
-      <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-      <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-    </div>
-    <nav class="top-bar__nav collapsed" id="top-bar__nav">
-      <ul class="top-bar__nav-list ">
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
+  </section>
+
 
 
     <!--============================== Header___Sec ==========================================-->
