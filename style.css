@@ -83,18 +83,6 @@ img {
 
 /* ============================== Nav___Bar ========================================== */
 
-@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
-@import url("https://fonts.googleapis.com/css?family=Montserrat");
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-html {
-  font-family: "Montserrat", sans-serif;
-}
-
 .top-bar {
   display: flex;
   min-height: 90px;
