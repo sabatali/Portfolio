@@ -750,44 +750,7 @@ input[type=submit]:hover {
         display: none;
     }
 
-    .nav_link {
-        position: absolute;
-        top: 100%;
-        right: 0;
-        flex-direction: column;
-        gap: 0;
-        display: none;
-        z-index: 1;
-    }
-
-    .nav_link li {
-        height: 5rem;
-        box-shadow: 3rem 3rem 3rem rgba(0, 0, 0, 0.7);
-    }
-
-    .nav_link li a {
-        background: var(--color-bg-4);
-        height: 100%;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        padding: 0.8rem 5rem 0.8rem 3rem;
-        border-top: 1px solid var(--color-bg-2);
-    }
-
-    .nav_toggle_btn {
-        display: inline-block;
-        font-size: 2rem;
-        background: transparent;
-        cursor: pointer;
-        color: var(--color-white);
-    }
-
-    #nav_toggle_close {
-        display: none;
-
-    }
-
+    
 
     header {
         height: fit-content;
