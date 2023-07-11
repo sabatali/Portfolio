@@ -295,6 +295,7 @@ header {
     left: -81px;
     top: 25px;
     width: 88%;
+    color: var(--color-light);
 }
 
 .header_content p {
